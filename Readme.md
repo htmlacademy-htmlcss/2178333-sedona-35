@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Таня  П](https://up.htmlacademy.ru/htmlcss/35/user/2178333).
-* Наставник: `Неизвестно`.
+* Наставник: `Ирина Малиновская`.(https://htmlacademy.ru/profile/irina-malinovskaya)
 
 ---
 
