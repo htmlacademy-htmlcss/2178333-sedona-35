@@ -5,11 +5,13 @@
     <title>Седона</title>
   </head>
   <body>
-<header class="pizza">
-  <nav class="navigation">
+<header class="header">
+  <h1 class="visually-hidden">Интерфейс</h1>
   <a class="navigation-logo">
-    <img class="pizza-logo" src="#" alt="Логотип Седона">
+    <img class="header-logo" src="#" alt="Логотип Седона">
   </a>
+  <nav class="navigation">
+    <h2 class="visually-hidden">Элементы навигации</h2>
   <ul class="navigation-list">
     <li class="navigation-item">
       <a class="navigation-link navigation-link-current" href="#" >Главная</a>
@@ -21,37 +23,40 @@
       <a class="navigation-link" href="catalog.html">Гостиницы</a>
     </li>
   </ul>
+</nav>
+<section>
+  <h2 class="visually-hidden">Элементы страницы</h2>
   <ul class="navigation-list navigation-user">
     <li class="navigation-item">
       <a class="navigation-link" href="#">
-        <span class="visually-hidden">
+        <span class="">
           Поиск
         </span>
       </a>
     </li>
     <li class="navigation-item">
       <a class="navigation-link" href="#">
-          Избранное<p class="favourites">12</p>
+          Избранное<span class="favourites">12</span>
       </a>
     </li>
     <li class="navigation-item">
       <a class="navigation-link" href="#">Хочу сюда</a>
     </li>
   </ul>
-  </nav>
+</section>
 </header>
-  <main>
+  <main class="home-page">
     <h1 class="visually-hidden">Седона</h1>
-    <ul>
-      <li><img class="" src="#" alt="WELCOME"></li>
-      <li><img class="" src="#" alt="to the gorgeous"></li>
-      <li><img class="" src="#" alt="Логотип Седона"></li>
-     </ul>
+    <div class="home-page-list">
+      <img class="home-page-img" src="#" alt="WELCOME">
+     <img class="home-page-img" src="#" alt="to the gorgeous">
+      <img class="home-page-img" src="#" alt="Логотип Седона">
+     </div>
+     <section class="fact">
+      <h2 class="visually-hidden">Факты</h2>
      <span><b>Седона — небольшой городок в Аризоне,
       заслуживающий большего!</b></span>
       <span>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</span>
-      <section class="fact">
-        <h2 class="visually-hidden">Факты</h2>
         <ul class="fact-list">
           <li class="fact-item">
             <h3 class="fact-title">Настоящий городок</h3>
@@ -100,21 +105,26 @@
           </li>
         </ul>
       </section>
+      <section class="book">
+        <h2 class="book-title">Заинтересовались?</h2>
+        <p class="book-text">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a class="book-hotel" href="catalog.html">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+      </section>
+      <div class="newsletter">
+        <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
+        <p class="page-footer-item">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label for="newsletter-email">Email</label>
+          <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
+          <button class="button newsletter-button" type="submit">
+           Подписаться
+          </button>
+        </form>
+      </div>
   </main>
-
 <footer class="page-footer">
-  <div class="newsletter">
-    <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
-    <p class="page-footer-item">Только полезная информация и никакого спама, честное бойскаутское!</p>
-    <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-      <label for="newsletter-email">Email</label>
-      <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
-      <button class="button newsletter-button" type="submit">
-        <span class="visually-hidden">Отправить</span>
-      </button>
-    </form>
-  </div>
   <section>
+    <h2 class="visually-hidden">Важная информация</h2>
     <ul class="footer-social-list">
       <li class="footer-social-item">
         <a class="button" href="#">
@@ -135,13 +145,9 @@
   </section>
   <section class="footer-contacts">
     <h2 class="visually-hidden">Контакты</h2>
-    <address class="footer-contacts-address">
       <a class="footer-contacts-address-phone" href="tel:+78005558628">+7 800 555-86-28</a>
-    </address>
   </section>
-<div class="about">
-  <p class="about-text"> <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
-</div>
+ <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
 </footer>
   </body>
 </html>
