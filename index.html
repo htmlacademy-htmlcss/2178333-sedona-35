@@ -8,11 +8,11 @@
   <body>
     <div class="container">
 <header class="header">
+  <nav class="navigation">
   <h1 class="visually-hidden">Интерфейс</h1>
   <a class="navigation-logo">
     <img class="header-logo" src="images/logo.svg" width="140" height="70" alt="Логотип Седона">
   </a>
-  <nav class="navigation">
     <h2 class="visually-hidden">Элементы навигации</h2>
   <ul class="navigation-list">
     <li class="navigation-item">
@@ -25,8 +25,6 @@
       <a class="navigation-link" href="catalog.html">Гостиницы</a>
     </li>
   </ul>
-</nav>
-<section>
   <h2 class="visually-hidden">Элементы страницы</h2>
   <ul class="navigation-list navigation-user">
     <li class="navigation-item">
@@ -45,18 +43,21 @@
       <a class="navigation-link-other" href="#">Хочу сюда</a>
     </li>
   </ul>
-</section>
+</nav>
 </header>
-  <main class="promo">
+  <main class="main-container promo">
+    <div class="page-container">
     <h1 class="visually-hidden">Седона</h1>
     <div class="promo-list">
-      <img class="promo-img" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону">
+      <img class="logo-img" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону">
      </div>
-     <section class="fact">
+     <div class="evidence">
       <h2 class="visually-hidden">Факты</h2>
-     <b class="fact-sedon">Седона — небольшой городок в Аризоне,
+     <b class="evidence-sedon">Седона — небольшой городок в Аризоне,
       заслуживающий большего!</b>
-      <span class="fact-reasons">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</span>
+      <span class="evidence-reasons">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</span>
+    </div>
+      <section class="fact">
         <ul class="fact-list">
           <li class="fact-item">
             <h3 class="fact-title-blue">НАСТОЯЩИЙ ГОРОДОК</h3>
@@ -111,6 +112,7 @@
         <a class="book-hotel" href="catalog.html">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
       </section>
       <div class="newsletter">
+        <div class="newsletter-box">
         <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
         <p class="page-footer-item">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -121,8 +123,11 @@
           </button>
         </form>
       </div>
+      </div>
+    </div>
   </main>
 <footer class="page-footer">
+  <div class="page-footer-container">
   <section>
     <h2 class="visually-hidden">Важная информация</h2>
     <ul class="footer-social-list">
@@ -147,7 +152,10 @@
     <h2 class="visually-hidden">Контакты</h2>
       <a class="footer-contacts-address-phone" href="tel:+78005558628">+7 800 555-86-28</a>
   </section>
+  <section>
  <a class="htmlacademy-link" href="https://htmlacademy.ru/">html academy</a>
+</section>
+</div>
 </footer>
 </div>
   </body>
