@@ -12,16 +12,40 @@
   src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
+html {
+  height: 100%;
+}
 body{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #000000;
   background-color: #FFFFFF;
+
+  outline: 5px solid rgba(255, 143, 78, 0.5);
+  outline-offset: -5px;
 }
 .header{
   color: #000000;
   background-color: #FFFFFF;
+}
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+.navigation-list {
+  width: 420px;
+  margin: 0;
+  padding: 0;
+}
+.navigation-user {
+  max-width: 300px;
+  margin-left: auto;
 }
 .navigation-link{
 font-size: 20px;
@@ -42,6 +66,9 @@ background-color: #756157;
 text-transform: uppercase;
 text-decoration: none;
 }
+.main-container {
+  flex-grow: 1;
+}
 .promo{
 color: #000000;
 background-color: #ffffff;
@@ -49,20 +76,54 @@ background-image: url("../images/index-background.jpg");
 background-size: 100% auto;
 background-repeat: no-repeat;
 }
-.fact{
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.logo-img {
+  display: block;
+  margin: 0 auto;
+}
+.evidence{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
   text-align: center;
   color: #000000;
 }
-.fact-sedon{
+.evidence-sedon{
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
 }
-.fact-reasons{
+.evidence-reasons{
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
+}
+  .fact{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    text-align: center;
+    color: #000000;
+}
+.fact-list{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  margin: 0;
+  padding: 0;
+}
+.fact-item{
+  flex-shrink: 0;
+  flex-basis: 400px;
+}
+.fact-item-img{
+  flex-shrink: 0;
+  flex-basis: 800px;
 }
 .fact-title{
   font-size: 24px;
@@ -102,6 +163,15 @@ background-repeat: no-repeat;
   background-color: #ffffff;;
 
 }
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.advantages-item {
+  width: 400px;
+}
 .advantages-title{
   font-weight: 700;
 }
@@ -122,6 +192,7 @@ background-repeat: no-repeat;
   color: #000000;
   background-color: #ffffff;;
 }
+
 .book-title{
   font-size: 30px;
   line-height: 36px;
@@ -143,11 +214,30 @@ background-repeat: no-repeat;
   background-color: #756157;
 }
 .newsletter{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
   color:  #ffffff;
   background-color: #000000;
   background-image: url("../images/background-nature.jpeg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+newsletter-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 684px;
+  margin: 0 auto;
+}
+.page-footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1060px;
+  margin: 0 auto;
 }
 .page-footer-title{
   font-size: 30px;
