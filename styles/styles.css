@@ -1,13 +1,13 @@
 @font-face{
   font-family: "PT Sans";
-  font style: bold;
+  font-style: bold;
   font-weight: 700;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 @font-face{
   font-family: "PT Sans";
-  font style: regular;
+  font-style: regular;
   font-weight: 400;
   src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
@@ -16,18 +16,22 @@ html {
   height: 100%;
 }
 body{
-  margin: 0;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0px 40px;
   min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #000000;
-  background-color: #FFFFFF;
-
-  outline: 5px solid rgba(255, 143, 78, 0.5);
-  outline-offset: -5px;
+  background-color: #F2F2F2;
+}
+.container{
+  width: 1200px;
+  margin: 0 auto;
 }
 .header{
   color: #000000;
@@ -37,26 +41,46 @@ body{
   display: flex;
   width: 1200px;
   margin: 0 auto;
+
+}
+.visually-hidden{
+  display: none;
+}
+.navigation-logo{
+  display: flex;
+  align-items: center;
+  width: 140px;
+  margin-left: 70px;
 }
 .navigation-list {
+  display: flex;
   width: 420px;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 .navigation-user {
   max-width: 300px;
   margin-left: auto;
 }
+
 .navigation-link{
+display: block;
+padding: 20px;
 font-size: 20px;
 line-height: 24px;
 font-weight: 700;
-text-align: left;
+text-align: center;
 color: #000000;
 background-color: #ffffff;
 text-decoration: none;
 }
-
+.navigation-user .navigation-link {
+align-items: center;
+padding: 24px 23px;
+min-width: 44px;
+min-height: 64px;
+}
 .navigation-link-other{
 font-size: 16px;
 line-height: 20px;
@@ -69,7 +93,8 @@ text-decoration: none;
 .main-container {
   flex-grow: 1;
 }
-.promo{
+.promo-list{
+min-height: 485px;
 color: #000000;
 background-color: #ffffff;
 background-image: url("../images/index-background.jpg");
@@ -83,6 +108,8 @@ background-repeat: no-repeat;
 .logo-img {
   display: block;
   margin: 0 auto;
+  padding-top: 51px;
+  padding-bottom: 25px;
 }
 .evidence{
   display: flex;
@@ -91,40 +118,73 @@ background-repeat: no-repeat;
   padding: 0;
   text-align: center;
   color: #000000;
+  background-color: #ffffff;
 }
 .evidence-sedon{
+  margin: 290px;
+  margin-top: 69px;
+  margin-bottom: 25px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
 }
 .evidence-reasons{
+  margin: 274px;
+  margin-top: 25px;
+  margin-bottom: 90px;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
 }
   .fact{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     align-content: space-evenly;
     text-align: center;
+    align-items: stretch;
     color: #000000;
 }
 .fact-list{
   display: flex;
-  flex-wrap: wrap;
-  align-content: space-evenly;
-  margin: 0;
-  padding: 0;
+  flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
 }
 .fact-item{
+  display: flex;
+  flex-direction: row;
   flex-shrink: 0;
   flex-basis: 400px;
 }
-.fact-item-img{
-  flex-shrink: 0;
-  flex-basis: 800px;
+.advantages-item-logo{
+  margin: 162px;
+  margin-top: 80px;
+  margin-bottom: 30px;
 }
+
+.fact-item-ru{
+flex: none;
+order: 0;
+flex-grow: 0;
+width: 400px;
+background-color: #82B3D3;
+}
+.fact-item-img{
+flex: none;
+order: 1;
+flex-grow: 0;
+height: 384px;
+width: 800px;
+}
+.fact-item-motive-white{
+width: 400px;
+background-color: rgba(131, 179, 211, 0.12);
+}
+
+
 .fact-title{
   font-size: 24px;
   line-height: 28px;
@@ -137,25 +197,45 @@ background-repeat: no-repeat;
   font-weight: 400;
 }
 .fact-title-blue{
+  margin: 113px;
+  margin-top: 103px;
+  margin-bottom: 62px;
+  text-transform: uppercase;
   color: #ffffff;
   background-color: #82B3D3;
 }
 .fact-description-blue{
+  margin: 85px;
+  margin-top: 62px;
+  margin-bottom: 121px;
   color: #ffffff;
   background-color: #82B3D3;
 }
 .fact-title-white{
-  background-color: rgba(131, 179, 211, 0.12);
+  margin: 113px;
+  margin-top: 103px;
+  margin-bottom: 62px;
+  text-transform: uppercase;
 }
 .fact-description-white{
-  background-color: rgba(131, 179, 211, 0.12);
+  margin: 85px;
+  margin-top: 62px;
+  margin-bottom: 121px;
 }
-
-.fact-title-gray{
+.fact-item-motive-gray{
+  width: 400px;
   background-color: rgba(131, 179, 211, 0.2);
+}
+.fact-title-gray{
+  margin: 113px;
+  margin-top: 103px;
+  margin-bottom: 62px;
+  text-transform: uppercase;
 }
 .fact-description-gray{
-  background-color: rgba(131, 179, 211, 0.2);
+  margin: 85px;
+  margin-top: 62px;
+  margin-bottom: 121px;
 }
 .advantages{
   text-align: center;
@@ -168,88 +248,160 @@ background-repeat: no-repeat;
   justify-content: space-between;
   margin: 0;
   padding: 0;
+  list-style-type: none;
+}
+.advantages-item-gray{
+  background-color: rgba(131, 179, 211, 0.12);
 }
 .advantages-item {
   width: 400px;
 }
 .advantages-title{
+  margin: 85px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
   font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
 }
 .advantages-description-gray{
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
-  background-color: rgba(131, 179, 211, 0.12);
+  margin: 85px;
+  margin-top: 30px;
+  margin-bottom: 81px;
+}
+.advantages-description{
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  margin: 85px;
+  margin-top: 30px;
+  margin-bottom: 81px;
 }
 .advantages-title-gray{
+  margin: 85px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  background-color: rgba(131, 179, 211, 0.12);
-
 }
 .book{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   text-align: center;
+  padding: 96px 304px;
+  height: 406px;
   color: #000000;
   background-color: #ffffff;;
 }
 
 .book-title{
+  margin: auto;
+  margin-top: 96px;
+  margin-bottom: 20px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
-
 }
 .book-text{
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 54px;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
 
 }
 .book-hotel{
+  min-width: 376px;
+  margin: auto;
+  margin-top: 54px;
+  margin-bottom: 96px;
+  padding: 8px 50px;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
   color:  #ffffff;
   background-color: #756157;
+  text-transform: uppercase;
 }
 .newsletter{
   display: flex;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
   color:  #ffffff;
   background-color: #000000;
   background-image: url("../images/background-nature.jpeg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
-newsletter-box{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  width: 684px;
-  margin: 0 auto;
+.page-footer{
+  background-color: #ffffff;
 }
 .page-footer-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   width: 1060px;
   margin: 0 auto;
 }
+.footer-social {
+  margin-right: 42px;
+  margin-left: 70px;
+  margin-bottom: 35px;
+  margin-top: 45px;
+  max-width: 142px;
+}
+.footer-social-item {
+  width: 48px;
+  height: 40px;
+  margin: 0;
+}
+.button{
+  margin-right: 42px;
+  margin-left: 70px;
+  margin-bottom: 35px;
+  margin-top: 45px;
+}
+.footer-social-list{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  list-style-type: none;
+}
 .page-footer-title{
+  margin: 398px;
+  margin-top: 96px;
+  margin-bottom: 20px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-  text-align: left;
 }
 .page-footer-item{
+  margin: 362px;
+  margin-top: 20px;
+  margin-bottom: 54px;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
   text-align: center;
+}
+.newsletter-form{
+margin: 258px;
+margin-top: 54px;
+margin-bottom: 104px;
 }
 .button newsletter-button{
   font-size: 20px;
@@ -258,11 +410,20 @@ newsletter-box{
   text-align: center;
   background-color:#82B3D3
 }
+.footer-contacts{
+  margin-top: 40px;
+  margin-bottom: 30px;
+  margin: 42px;
+  border-left: 195px;
+  border-right: 194px;
+    border: 5px;
+}
   .footer-contacts-address-phone{
     font-size: 40px;
     line-height: 40px;
     font-weight: 400;
     text-align: center;
+    text-transform: uppercase;
   }
 .htmlacademy-link{
   color:  #000000;
@@ -270,4 +431,7 @@ newsletter-box{
   background-image: url("../images/html.png");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  flex: none;
+order: 2;
+flex-grow: 0;
 }
